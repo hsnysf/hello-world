@@ -15,6 +15,6 @@ public class HelloWorldApplication {
 
 	@GetMapping("/")
 	public String home() {
-		return "Welcome To AWS ECS";
+		return "Welcome To AWS CodePipeLine";
 	}
 }
