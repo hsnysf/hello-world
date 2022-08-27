@@ -49,3 +49,4 @@ spec:
   sessionAffinity: None
   type: LoadBalancer
   externalIPs:
+  - 15.184.218.199
