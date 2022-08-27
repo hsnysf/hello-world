@@ -37,9 +37,11 @@ metadata:
 spec:
   ports:
   - port: 80
+    name: http
     protocol: TCP
     targetPort: 5000
   - port: 443
+    name: https
     protocol: TCP
     targetPort: 443
   selector:
