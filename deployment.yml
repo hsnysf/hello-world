@@ -42,7 +42,7 @@ spec:
   selector:
     app: hello-world
   sessionAffinity: None
-  type: LoadBalancer
+  type: NodePort
   externalIPs:
 ---
 apiVersion: v1
