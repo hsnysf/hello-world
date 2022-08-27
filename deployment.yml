@@ -44,4 +44,9 @@ spec:
   sessionAffinity: None
   type: LoadBalancer
   externalIPs:
-  - 127.0.0.1
+---
+apiVersion: v1
+kind: InitConfiguration
+nodeRegistration:
+  kubeletExtraArgs:
+    cloud-provider: aws
