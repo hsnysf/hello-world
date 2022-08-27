@@ -46,12 +46,9 @@ spec:
   externalIPs:
 ---
 apiVersion: v1
-kind: InitConfiguration
+kind: ConfigMap
 metadata:
   labels:
     app: hello-world
   name: hello-world
   namespace: default
-nodeRegistration:
-  kubeletExtraArgs:
-    cloud-provider: aws
