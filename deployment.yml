@@ -39,16 +39,11 @@ spec:
   - port: 80
     protocol: TCP
     targetPort: 5000
+  - port: 443
+    protocol: TCP
+    targetPort: 443
   selector:
     app: hello-world
   sessionAffinity: None
   type: NodePort
   externalIPs:
----
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  labels:
-    app: hello-world
-  name: hello-world
-  namespace: default
